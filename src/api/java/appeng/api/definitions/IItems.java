@@ -39,8 +39,6 @@ public interface IItems {
 
 	IItemDefinition certusQuartzPick();
 
-	IItemDefinition certusQuartzSword();
-
 	IItemDefinition certusQuartzWrench();
 
 	IItemDefinition certusQuartzKnife();
@@ -52,8 +50,6 @@ public interface IItems {
 	IItemDefinition netherQuartzShovel();
 
 	IItemDefinition netherQuartzPick();
-
-	IItemDefinition netherQuartzSword();
 
 	IItemDefinition netherQuartzWrench();
 
