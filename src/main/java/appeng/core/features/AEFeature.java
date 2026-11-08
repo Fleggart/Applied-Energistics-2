@@ -55,7 +55,6 @@ public enum AEFeature {
 
     QUARTZ_HOE("QuartzHoe", Constants.CATEGORY_TOOLS),
     QUARTZ_SPADE("QuartzSpade", Constants.CATEGORY_TOOLS),
-    QUARTZ_SWORD("QuartzSword", Constants.CATEGORY_TOOLS),
     QUARTZ_PICKAXE("QuartzPickaxe", Constants.CATEGORY_TOOLS),
     QUARTZ_AXE("QuartzAxe", Constants.CATEGORY_TOOLS),
     QUARTZ_KNIFE("QuartzKnife", Constants.CATEGORY_TOOLS),
