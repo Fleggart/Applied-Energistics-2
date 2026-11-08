@@ -16,10 +16,6 @@ jobs:
         run: ./gradlew updateBuildScript
       - name: Build with Gradle
         run: ./gradlew build
-      - name: Test Gradle Download
-        run: |
-          curl -IL --max-time 60 https://services.gradle.org/distributions/gradle-8.5-bin.zip
-          curl -IL --max-time 60 https://downloads.gradle.org/distributions/gradle-8.5-bin.zip
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
