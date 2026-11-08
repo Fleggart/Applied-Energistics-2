@@ -64,7 +64,7 @@ public final class ApiItems implements IItems {
     private final IItemDefinition certusQuartzHoe;
     private final IItemDefinition certusQuartzShovel;
     private final IItemDefinition certusQuartzPick;
-    private final IItemDefinition certusQuartzSword;
+    
     private final IItemDefinition certusQuartzWrench;
     private final IItemDefinition certusQuartzKnife;
 
@@ -72,7 +72,7 @@ public final class ApiItems implements IItems {
     private final IItemDefinition netherQuartzHoe;
     private final IItemDefinition netherQuartzShovel;
     private final IItemDefinition netherQuartzPick;
-    private final IItemDefinition netherQuartzSword;
+    
     private final IItemDefinition netherQuartzWrench;
     private final IItemDefinition netherQuartzKnife;
 
@@ -139,9 +139,6 @@ public final class ApiItems implements IItems {
         this.certusQuartzPick = certusTools.item("certus_quartz_pickaxe", () -> new ToolQuartzPickaxe(AEFeature.CERTUS_QUARTZ_TOOLS))
                 .addFeatures(AEFeature.QUARTZ_PICKAXE)
                 .build();
-        this.certusQuartzSword = certusTools.item("certus_quartz_sword", () -> new ToolQuartzSword(AEFeature.CERTUS_QUARTZ_TOOLS))
-                .addFeatures(AEFeature.QUARTZ_SWORD)
-                .build();
         this.certusQuartzWrench = certusTools.item("certus_quartz_wrench", ToolQuartzWrench::new)
                 .addFeatures(AEFeature.QUARTZ_WRENCH)
                 .bootstrap(item -> (IOreDictComponent) side -> OreDictionary.registerOre("itemQuartzWrench", new ItemStack(item)))
@@ -163,9 +160,6 @@ public final class ApiItems implements IItems {
                 .build();
         this.netherQuartzPick = netherTools.item("nether_quartz_pickaxe", () -> new ToolQuartzPickaxe(AEFeature.NETHER_QUARTZ_TOOLS))
                 .addFeatures(AEFeature.QUARTZ_PICKAXE)
-                .build();
-        this.netherQuartzSword = netherTools.item("nether_quartz_sword", () -> new ToolQuartzSword(AEFeature.NETHER_QUARTZ_TOOLS))
-                .addFeatures(AEFeature.QUARTZ_SWORD)
                 .build();
         this.netherQuartzWrench = netherTools.item("nether_quartz_wrench", ToolQuartzWrench::new)
                 .addFeatures(AEFeature.QUARTZ_WRENCH)
@@ -292,10 +286,7 @@ public final class ApiItems implements IItems {
         return this.certusQuartzPick;
     }
 
-    @Override
-    public IItemDefinition certusQuartzSword() {
-        return this.certusQuartzSword;
-    }
+   
 
     @Override
     public IItemDefinition certusQuartzWrench() {
@@ -327,10 +318,7 @@ public final class ApiItems implements IItems {
         return this.netherQuartzPick;
     }
 
-    @Override
-    public IItemDefinition netherQuartzSword() {
-        return this.netherQuartzSword;
-    }
+   
 
     @Override
     public IItemDefinition netherQuartzWrench() {
