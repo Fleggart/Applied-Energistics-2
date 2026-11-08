@@ -11,7 +11,7 @@ jobs:
         uses: actions/setup-java@v6
         with:
           java-version: '17'
-          distribution: 'adopt' # You can choose other OpenJDK distributions.
+          distribution: 'temurin' # You can choose other OpenJDK distributions.
       - name: Update Build Script (Before Build)
         run: ./gradlew updateBuildScript
       - name: Build with Gradle
