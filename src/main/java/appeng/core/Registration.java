@@ -59,7 +59,6 @@ import appeng.hooks.WrenchClickHook;
 import appeng.items.materials.ItemMaterial;
 import appeng.items.parts.ItemFacade;
 import appeng.items.parts.ItemPart;
-import appeng.loot.ChestLoot;
 import appeng.me.cache.*;
 import appeng.recipes.AEItemResolver;
 import appeng.recipes.AERecipeLoader;
@@ -193,10 +192,6 @@ final class Registration {
         MinecraftForge.EVENT_BUS.register(TickHandler.INSTANCE);
 
         MinecraftForge.EVENT_BUS.register(new WrenchClickHook());
-
-        if (AEConfig.instance().isFeatureEnabled(AEFeature.CHEST_LOOT)) {
-            MinecraftForge.EVENT_BUS.register(new ChestLoot());
-        }
 
         final IGridCacheRegistry gcr = registries.gridCache();
         gcr.registerGridCache(ITickManager.class, TickManagerCache.class);
