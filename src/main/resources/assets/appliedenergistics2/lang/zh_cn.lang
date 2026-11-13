@@ -607,7 +607,7 @@ item.appliedenergistics2.certus_quartz_cutting_knife.name=赛特斯石英切割�
 item.appliedenergistics2.certus_quartz_hoe.name=赛特斯石英锄
 item.appliedenergistics2.certus_quartz_pickaxe.name=赛特斯石英镐
 item.appliedenergistics2.certus_quartz_spade.name=赛特斯石英锹
-item.appliedenergistics2.certus_quartz_sword.name=赛特斯石英剑
+
 item.appliedenergistics2.certus_quartz_wrench.name=赛特斯石英扳手
 
 item.appliedenergistics2.nether_quartz_axe.name=下界石英斧
@@ -615,7 +615,6 @@ item.appliedenergistics2.nether_quartz_cutting_knife.name=下界石英切割刀
 item.appliedenergistics2.nether_quartz_hoe.name=下界石英锄
 item.appliedenergistics2.nether_quartz_pickaxe.name=下界石英镐
 item.appliedenergistics2.nether_quartz_spade.name=下界石英锹
-item.appliedenergistics2.nether_quartz_sword.name=下界石英剑
 item.appliedenergistics2.nether_quartz_wrench.name=下界石英扳手
 
 item.appliedenergistics2.paint_ball.name=染色球
