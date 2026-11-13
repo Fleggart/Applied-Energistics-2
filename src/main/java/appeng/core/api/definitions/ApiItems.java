@@ -76,7 +76,7 @@ public final class ApiItems implements IItems {
     private final IItemDefinition netherQuartzWrench;
     private final IItemDefinition netherQuartzKnife;
 
-    private final IItemDefinition entropyManipulator;
+    
     private final IItemDefinition wirelessTerminal;
     private final IItemDefinition wirelessCraftingTerminal;
     private final IItemDefinition wirelessPatternTerminal;
@@ -171,10 +171,7 @@ public final class ApiItems implements IItems {
                 .build();
 
         FeatureFactory powerTools = registry.features(AEFeature.POWERED_TOOLS);
-        this.entropyManipulator = powerTools.item("entropy_manipulator", ToolEntropyManipulator::new)
-                .addFeatures(AEFeature.ENTROPY_MANIPULATOR)
-                .dispenserBehavior(DispenserBlockTool::new)
-                .build();
+        
         this.wirelessTerminal = powerTools.item("wireless_terminal", ToolWirelessTerminal::new).addFeatures(AEFeature.WIRELESS_ACCESS_TERMINAL).build();
         this.wirelessCraftingTerminal = powerTools.item("wireless_crafting_terminal", ToolWirelessCraftingTerminal::new).addFeatures(AEFeature.WIRELESS_CRAFTING_TERMINAL).build();
         this.wirelessPatternTerminal = powerTools.item("wireless_pattern_terminal", ToolWirelessPatternTerminal::new).addFeatures(AEFeature.WIRELESS_PATTERN_TERMINAL).build();
@@ -328,11 +325,6 @@ public final class ApiItems implements IItems {
     @Override
     public IItemDefinition netherQuartzKnife() {
         return this.netherQuartzKnife;
-    }
-
-    @Override
-    public IItemDefinition entropyManipulator() {
-        return this.entropyManipulator;
     }
 
     @Override
