@@ -447,7 +447,6 @@ final class Registration {
         items.portableCell().maybeItem().ifPresent(chargedStaff -> registries.charger().addChargeRate(chargedStaff, 800d));
         items.colorApplicator().maybeItem().ifPresent(colorApplicator -> registries.charger().addChargeRate(colorApplicator, 800d));
         items.wirelessTerminal().maybeItem().ifPresent(terminal -> registries.charger().addChargeRate(terminal, 8000d));
-        items.entropyManipulator().maybeItem().ifPresent(entropyManipulator -> registries.charger().addChargeRate(entropyManipulator, 8000d));
         items.massCannon().maybeItem().ifPresent(massCannon -> registries.charger().addChargeRate(massCannon, 8000d));
         blocks.energyCell().maybeItem().ifPresent(cell -> registries.charger().addChargeRate(cell, 8000d));
         blocks.energyCellDense().maybeItem().ifPresent(cell -> registries.charger().addChargeRate(cell, 16000d));
