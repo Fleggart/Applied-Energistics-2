@@ -55,7 +55,7 @@ public interface IItems {
 
 	IItemDefinition netherQuartzKnife();
 
-	IItemDefinition entropyManipulator();
+	
 
 	IItemDefinition wirelessTerminal();
 
