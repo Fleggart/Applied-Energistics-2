@@ -183,7 +183,7 @@ public final class AEConfig extends Configuration implements IConfigurableObject
 
         this.wirelessTerminalBattery = this.get("battery", "wirelessTerminal", this.wirelessTerminalBattery).getInt(this.wirelessTerminalBattery);
         this.chargedStaffBattery = this.get("battery", "chargedStaff", this.chargedStaffBattery).getInt(this.chargedStaffBattery);
-        this.entropyManipulatorBattery = this.get("battery", "entropyManipulator", this.entropyManipulatorBattery).getInt(this.entropyManipulatorBattery);
+        
         this.portableCellBattery = this.get("battery", "portableCell", this.portableCellBattery).getInt(this.portableCellBattery);
         this.colorApplicatorBattery = this.get("battery", "colorApplicator", this.colorApplicatorBattery).getInt(this.colorApplicatorBattery);
         this.matterCannonBattery = this.get("battery", "matterCannon", this.matterCannonBattery).getInt(this.matterCannonBattery);
@@ -587,10 +587,6 @@ public final class AEConfig extends Configuration implements IConfigurableObject
 
     public int getWirelessTerminalBattery() {
         return this.wirelessTerminalBattery;
-    }
-
-    public int getEntropyManipulatorBattery() {
-        return this.entropyManipulatorBattery;
     }
 
     public int getMatterCannonBattery() {
