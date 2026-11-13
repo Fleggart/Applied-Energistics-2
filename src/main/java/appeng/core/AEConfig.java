@@ -96,7 +96,6 @@ public final class AEConfig extends Configuration implements IConfigurableObject
     private double oreDoublePercentage = 90.0;
     // Batteries
     private int wirelessTerminalBattery = 1600000;
-    private int entropyManipulatorBattery = 200000;
     private int matterCannonBattery = 200000;
     private int portableCellBattery = 20000;
     private int colorApplicatorBattery = 20000;
